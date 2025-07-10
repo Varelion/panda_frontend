@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Dashboard from './components/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="min-h-screen themed-bg">
         <Routes>
           {/* Public routes */}
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
 
@@ -25,12 +27,9 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route />
 
           {/* Redirect based on auth status */}
-          <Route
-            path="/"
-            element={isAuthenticated() ? <Navigate to="/dashboard" /> : <Navigate to="/login" />}
-          />
 
           {/* Catch all - redirect to home */}
           <Route path="*" element={<Navigate to="/" />} />
