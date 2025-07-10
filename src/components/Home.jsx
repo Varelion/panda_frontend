@@ -25,29 +25,27 @@ function Home() {
         </div>
 
         {/* Overlay content */}
-        <div className="relative z-10 wt-content">
+        <div className=" flex flex-row bg-blue-500 min-w-screen min-h-screen  justify-around items-center">
           {/* Main content container with flex layout */}
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
+          <div className="">
+            <div className="buttons mt-8">
+              <button className="order-bt" onClick={handleOrderClick} aria-label="Start an Order">
+                Start an Order
+              </button>
+              <button className="try-bt" onClick={handleTryClick} aria-label="Try This Dish">
+                Try Dis Bish
+              </button>
+            </div>
             {/* Left side - Hot Orange Chicken component */}
             <div className="flex-1 flex justify-start"></div>
 
-            <PremiereItemPoster />
-            <MesmerizingCarousel />
-
-            {/* Right side - Mesmerizing Carousel */}
-            <div className="flex-1 flex justify-end">
-              <div className=""></div>
-            </div>
+            {/* <PremiereItemPoster width={'30vw'} aspectRatio={'8 / 12'} className={' '} /> */}
           </div>
 
           {/* Buttons section */}
-          <div className="buttons mt-8">
-            <button className="order-bt" onClick={handleOrderClick} aria-label="Start an Order">
-              Start an Order
-            </button>
-            <button className="try-bt" onClick={handleTryClick} aria-label="Try This Dish">
-              Try Dis Bish
-            </button>
+
+          <div className="grow ">
+            <MesmerizingCarousel className={'max-w-[30vw] mt-[-4rem] ml-[-4rem]' } />
           </div>
         </div>
       </div>

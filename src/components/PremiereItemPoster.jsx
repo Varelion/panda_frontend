@@ -21,11 +21,8 @@ const PremiereItemPoster = React.memo(function HotOrangeChickenTextOriginalHeigh
         aspectRatio, // CSS aspect-ratio preserves the ratio dynamically
       }}
     >
-      <img
-        src="./assets/panda-pink.webp"
-        alt="Hot Orange Chicken Poster"
-        className="absolute inset-0 w-full h-full object-cover z-0  duration-700 ease-in-out hover:scale-105"
-      />
+      <img src="./assets/panda-pink.webp" alt="Hot Orange Chicken Poster" className="" />
+
       <div className="absolute inset-0 bg-black/70 z-10 flex flex-col justify-center items-center text-white px-4 text-center hover:opacity-0 transition-all duration-[900ms] ease-in-out animate-pulse hover:animate-none">
         {/* <!-- Glow layer --> */}
         <div className="h-full w-full flex flex-col justify-between items-center">
