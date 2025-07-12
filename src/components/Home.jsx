@@ -18,35 +18,24 @@ function Home() {
       <Header />
 
       {/* Container with StarringBanner as background */}
-      <div className="relative min-h-screen">
-        {/* StarringBanner as background */}
-        <div className="absolute inset-0 ">
+      <div className=''>
+
           <StarringBanner />
+
+      </div>
+      <div id="home-body-grid" className="min-w-full min-h-[calc(100vh-70px)] !z-10 absolute top-[70px]  grid-cols-3 grid gap-5 p-8 justify-center items-center"
+      >
+
+        <div id='grid-col-1' className='min-h-[20%] min-w-[20%] bg-green-500 self-start'>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores quam quasi architecto, veritatis nostrum nisi fuga vel, error necessitatibus, fugiat dolorem excepturi natus sit iste nihil delectus autem recusandae.
         </div>
 
-        {/* Overlay content */}
-        <div className=" flex flex-row bg-blue-500 min-w-screen min-h-screen  justify-around items-center">
-          {/* Main content container with flex layout */}
-          <div className="">
-            <div className="buttons mt-8">
-              <button className="order-bt" onClick={handleOrderClick} aria-label="Start an Order">
-                Start an Order
-              </button>
-              <button className="try-bt" onClick={handleTryClick} aria-label="Try This Dish">
-                Try Dis Bish
-              </button>
-            </div>
-            {/* Left side - Hot Orange Chicken component */}
-            <div className="flex-1 flex justify-start"></div>
-
-            {/* <PremiereItemPoster width={'30vw'} aspectRatio={'8 / 12'} className={' '} /> */}
-          </div>
-
-          {/* Buttons section */}
-
-          <div className="grow ">
-            <MesmerizingCarousel className={'max-w-[30vw] mt-[-4rem] ml-[-4rem]' } />
-          </div>
+        <div id='grid-col-2' className='bg-yellow-500 self-end'>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero ad et alias in quis, qui optio facere labore dolorum ipsam esse, eos earum at beatae sequi tempora sit iure.
+        </div>
+        <div id='grid-col-3' className=' max-w-[50vh] flex justify-center items-center flex-col justify-self-end'>
+<MesmerizingCarousel  />
         </div>
       </div>
     </div>

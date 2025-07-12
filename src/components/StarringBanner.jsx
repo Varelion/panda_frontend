@@ -17,7 +17,7 @@ const StarringBanner = () => {
   const inside = '#e80029'; // thicker
   return (
     <>
-      <div className={`  hoc-wt ${isAnimated ? 'anim' : ''}`}>
+      <div className={`absolute insert-0  hoc-wt ${isAnimated ? 'anim' : ''}`}>
         {/* Rotating burst of rays */}
         <div id="background_image" className="hoc-burst">
           <svg

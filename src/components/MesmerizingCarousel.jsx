@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+
+
 const MesmerizingCarousel = ({ className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -182,10 +184,7 @@ const MesmerizingCarousel = ({ className }) => {
             return (
               <div
                 key={index}
-                className={`absolute inset-0 transition-all duration-1000 ease-in-out transform ${transformClass}`}
-                style={{
-                  transformStyle: 'preserve-3d',
-                }}
+                className={` transition-all duration-1000 ease-in-out transform ${transformClass}`}
               >
                 <img
                   src={image.src}
@@ -293,8 +292,8 @@ const MesmerizingCarousel = ({ className }) => {
       </div>
 
       {/* Floating accent elements */}
-      <div className="absolute -top-6 -right-6 w-10 h-10 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full animate-bounce opacity-70 flex items-center justify-center text-white text-lg backdrop-blur-sm">
-        <FlutteringHeart size={16} delay={0} duration={1.5} />
+      <div className="absolute -top-6 -right-6 w-10 h-10   rounded-full animate-bounce  flex items-center justify-center text-lg">
+        <FlutteringHeart size={16} delay={0.5} duration={1.5} />
       </div>
       <div className="absolute -bottom-6 -left-6 w-8 h-8 bg-gradient-to-r from-rose-500 to-red-500 rounded-full animate-pulse opacity-70 flex items-center justify-center text-white backdrop-blur-sm">
         <FlutteringHeart size={12} delay={0.5} duration={2} />
