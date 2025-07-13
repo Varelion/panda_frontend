@@ -10,7 +10,6 @@ import Dashboard from './components/dashboard';
 import ProtectedRoute from './components/protectedRoute';
 import Home from './components/home';
 
-
 function App() {
   return (
     <Router>
@@ -26,6 +25,7 @@ function App() {
             path="/dashboard"
             element={
               <ProtectedRoute>
+                //!TODO: Error here from import at line 9
                 <Dashboard />
               </ProtectedRoute>
             }
@@ -43,7 +43,6 @@ function App() {
 }
 
 export default App;
-
 
 // --------------------------
 //#endregion src/App.jsx
