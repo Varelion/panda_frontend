@@ -1,1 +1,1 @@
-export {default as PremiereItemPoster} from './PremiereItemPoster'
+export { default } from './PremiereItemPoster';

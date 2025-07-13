@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
-
 const MesmerizingCarousel = ({ className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);

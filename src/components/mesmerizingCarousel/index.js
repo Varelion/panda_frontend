@@ -1,1 +1,1 @@
-export {default as MesmerizingCarousel} from './MesmerizingCarousel'
+export { default } from './MesmerizingCarousel'
