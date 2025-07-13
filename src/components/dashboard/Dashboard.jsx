@@ -1,3 +1,7 @@
+// --------------------------
+//#region src/components/dashboard/Dashboard.jsx
+// --------------------------
+
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProfile, logout } from '../utils/auth';
@@ -108,3 +112,8 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
+// --------------------------
+//#endregion src/components/dashboard/Dashboard.jsx
+// --------------------------
