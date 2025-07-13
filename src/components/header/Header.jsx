@@ -46,7 +46,7 @@ function Header() {
 
   const PandaLogo = ({ size = 60 }) => (
     <div
-      className="bg-white rounded-full flex items-center justify-center translate-y-[-5px]"
+      className="bg-white absolute rounded-full flex items-center justify-center translate-y-[-5px] top-2.5"
       style={{ width: size, height: size }}
     >
       <img
@@ -66,7 +66,8 @@ function Header() {
   };
 
   return (
-    <header role="banner" className="bg-[#d1282e] h-[70px] text-white relative z-50">
+
+    <header role="banner" className="bg-[#d1282e] h-[70px] text-white relative z-50 flex">
       <style jsx>{`
         .nav-item {
           position: relative;
@@ -85,14 +86,13 @@ function Header() {
           display: none;
         }
       `}</style>
-
-      <div className="container mx-auto min-w-[100vw] ">
-        <div className="flex items-center justify-start h-20 px-4 w-full  min-w-[100vw] ">
+        <div className="flex justify-start items-center  px-4 w-full  min-w-[100vw] ">
           {/* Logo and Brand */}
           <div className="flex items-center">
             <h1 className="sr-only">Panda Express</h1>
             <a href="/" className="flex items-center mr-5" aria-label="Panda Express Home">
               <PandaLogo />
+              <div className='min-w-11'> </div>
             </a>
           </div>
 
@@ -104,7 +104,7 @@ function Header() {
                   {item.submenu ? (
                     <div
                       // MAIN DROPDOWN CONTAINER - Extends hover area and positions dropdown
-                      className="relative"
+                      className="relative "
                       onMouseEnter={() => handleDropdownEnter(index)}
                       onMouseLeave={handleDropdownLeave}
                     >
@@ -129,7 +129,7 @@ function Header() {
 
                       {/* DROPDOWN MENU - Positioned exactly 81px from header top */}
                       {activeDropdown === index && (
-                        <div className="absolute top-[62px] left-0 bg-white text-black rounded-lg shadow-lg min-w-48 z-50">
+                        <div className="absolute  left-0 bg-white text-black shadow-lg min-w-48 z-1 mt-3">
                           {/* INVISIBLE DROPDOWN PADDING - Extends hover area around the dropdown */}
                           {/* Top padding - extends upward */}
                           <div className="absolute bottom-full left-0 w-full h-4 bg-transparent pointer-events-auto" />
@@ -262,8 +262,7 @@ function Header() {
             </ul>
           </nav>
         )}
-      </div>
-    </header>
+      </header>
   );
 }
 

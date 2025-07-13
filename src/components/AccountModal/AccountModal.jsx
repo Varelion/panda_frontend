@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Login from './Login';
-import Signup from './Signup';
-import Dashboard from './Dashboard';
-import { isAuthenticated, getProfile } from '../utils/auth';
-import ThemeToggle from './ThemeToggle';
+import Login from '../Login/Login';
+import Signup from '../Signup';
+import Dashboard from '../Dashboard';
+import { isAuthenticated, getProfile } from '../signup/utils/auth';
+import ThemeToggle from '../ThemeToggle';
 
 function AccountModal({ isOpen, onClose }) {
   const [user, setUser] = useState(null);

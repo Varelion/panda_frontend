@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import MesmerizingCarousel from './MesmerizingCarousel';
+import MesmerizingCarousel from './MesmerizingCarousel/MesmerizingCarousel';
 import './starring-banner.css'; // External CSS file
 
 const StarringBanner = () => {

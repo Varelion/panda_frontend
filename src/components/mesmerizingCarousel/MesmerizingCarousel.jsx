@@ -6,13 +6,22 @@ const MesmerizingCarousel = ({ className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
+  // const images = [
+  //   { src: './assets/panda-pink.webp', alt: 'Panda Pink Special' },
+  //   { src: './assets/panda-arm.webp', alt: 'Panda Arm Dish' },
+  //   { src: './assets/panda-blue.webp', alt: 'Panda Blue Delight' },
+  //   { src: './assets/panda-hooters.webp', alt: 'Panda Hooters Style' },
+  //   { src: './assets/panda-poster.webp', alt: 'Panda Poster' },
+  //   { src: './assets/panda-red.webp', alt: 'Panda Red Creation' },
+  // ];
+
   const images = [
-    { src: './assets/panda-pink.webp', alt: 'Panda Pink Special' },
-    { src: './assets/panda-arm.webp', alt: 'Panda Arm Dish' },
-    { src: './assets/panda-blue.webp', alt: 'Panda Blue Delight' },
-    { src: './assets/panda-hooters.webp', alt: 'Panda Hooters Style' },
-    { src: './assets/panda-poster.webp', alt: 'Panda Poster' },
-    { src: './assets/panda-red.webp', alt: 'Panda Red Creation' },
+    { src: '', alt: 'Panda Pink Special' },
+    { src: '', alt: 'Panda Arm Dish' },
+    { src: '', alt: 'Panda Blue Delight' },
+    { src: '', alt: 'Panda Hooters Style' },
+    { src: '', alt: 'Panda Poster' },
+    { src: '', alt: 'Panda Red Creation' },
   ];
 
   // Auto-play functionality
@@ -276,19 +285,6 @@ const MesmerizingCarousel = ({ className }) => {
             }`}
           />
         ))}
-      </div>
-
-      {/* Mesmerizing progress bar */}
-      <div className="mt-4 w-full bg-pink-200 rounded-full h-2 overflow-hidden shadow-inner">
-        <div
-          className="h-full bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 transition-all duration-300 ease-out relative"
-          style={{
-            width: `${((currentIndex + 1) / images.length) * 100}%`,
-          }}
-        >
-          <div className="absolute inset-0 bg-white opacity-30 animate-pulse"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-pulse"></div>
-        </div>
       </div>
 
       {/* Floating accent elements */}

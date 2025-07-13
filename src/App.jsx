@@ -1,11 +1,12 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Dashboard from './components/Dashboard';
-import ProtectedRoute from './components/ProtectedRoute';
-import Home from './components/Home';
+import Login from './components/login';
+import Signup from './components/signup';
+import Dashboard from './components/dashboard';
+import ProtectedRoute from './components/protectedRoute';
+import Home from './components/home';
+
 
 function App() {
   return (
