@@ -60,9 +60,9 @@ export const mesmerizingCarouselSlice = createSlice({
       state.image_array.filter((value) => value != action.payload);
     },
     // TODO: Implement change where uuid matches
-    changeImageKey: (state, action) => {
-      state.;
-    },
+    // changeImageKey: (state, action) => {
+      // state.;
+    // },
   },
 });
 
