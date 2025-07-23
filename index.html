@@ -2,13 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Pandaren Express - Fast and efficient delivery service" />
+    <meta name="keywords" content="delivery, express, pandaren, food delivery" />
+    <meta name="author" content="Pandaren Express" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pandaren Express" />
+    <meta property="og:description" content="Fast and efficient delivery service" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/assets/panda-express-no-border.png" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pandaren Express" />
+    <meta name="twitter:description" content="Fast and efficient delivery service" />
+    <meta name="twitter:image" content="/src/assets/panda-express-no-border.png" />
+    
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/panda-express-no-border.png" />
+    <link rel="apple-touch-icon" href="/src/assets/panda-express-no-border.png" />
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./src/index.css" as="style" />
     <link href="./src/index.css" rel="stylesheet" />
-    <title>Vite + React</title>
+    
+    <title>Pandaren Express</title>
   </head>
   <body>
-    <div id="root"></div>
+    <noscript>
+      <p>This application requires JavaScript to run. Please enable JavaScript in your browser.</p>
+    </noscript>
+    <main id="root" role="main"></main>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
