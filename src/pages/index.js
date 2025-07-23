@@ -1,0 +1,15 @@
+export { default as HomePage } from './HomePage';
+export { default as OurFoodPhilosophyPage } from './OurFoodPhilosophyPage';
+export { default as OurFamilyPage } from './OurFamilyPage';
+export { default as OurStaffPage } from './OurStaffPage';
+export { default as UnityPage } from './UnityPage';
+export { default as GiftCardsPage } from './GiftCardsPage';
+export { default as OurValuesPage } from './OurValuesPage';
+export { default as OurFoodPage } from './OurFoodPage';
+export { default as OurShopPage } from './OurShopPage';
+export { default as RewardsPage } from './RewardsPage';
+export { default as LocationPage } from './LocationPage';
+export { default as AboutPage } from './AboutPage';
+export { default as ContactUsPage } from './ContactUsPage';
+export { default as FeedbackPage } from './FeedbackPage';
+export { default as MaintenancePage } from './MaintenancePage';
