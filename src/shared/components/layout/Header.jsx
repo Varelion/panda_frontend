@@ -193,7 +193,7 @@ function Header() {
 
                     {/* DROPDOWN MENU - Positioned exactly 81px from header top */}
                     {activeDropdown === index && (
-                      <div className="absolute  left-0 bg-white text-black shadow-lg min-w-48 z-1 mt-3">
+                      <div className="absolute !top-[45px] left-0 bg-white text-black shadow-lg min-w-48 z-1 mt-3">
                         {/* INVISIBLE DROPDOWN PADDING - Extends hover area around the dropdown */}
                         {/* Top padding - extends upward */}
                         <div className="absolute bottom-full left-0 w-full h-4 bg-transparent pointer-events-auto" />
