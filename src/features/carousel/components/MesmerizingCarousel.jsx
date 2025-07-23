@@ -288,7 +288,7 @@ const MesmerizingCarousel = ({ className }) => {
         <SparklingDust size={20} delay={1} duration={2.5} />
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes borderGlow {
           0%,
           100% {

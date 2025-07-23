@@ -132,7 +132,7 @@ function Header() {
 
   return (
     <header role="banner" className="bg-[#d1282e] h-[70px] text-white relative z-50 flex">
-      <style jsx>{`
+      <style>{`
         .nav-item {
           position: relative;
         }
